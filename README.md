@@ -1,2 +1,2 @@
 # CS116Labs
-# All completed labs for IIT CS116
+All completed labs for IIT CS116
