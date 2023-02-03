@@ -1,0 +1,67 @@
+Part I: Java Method Arguments
+What are the values of p and q after the following code executes?
+int p = 20;
+int q = 15
+swap(p,q);
+After the following code the values of p and q are swapped meaning that q will hold the value 20 and p hold 15.
+
+What are the values of p, q and r after the following code executes?
+		int p = 1;
+		int q = 2;
+		int r = 5;
+		int r = tryPrimative(p,q);
+The values of p q and r equal after the code tryPrimative(p,q) executes are 11 (p), 11(r), and 12(q).
+Part III: Scope of Variables
+	one – class data
+	two – instance data
+	three – instance data
+four – class data
+w – local
+x – local
+y – local
+
+The output will be 1. a: one = 2 two = 3 three = 5 2. a: one = 2 two = 8 three = 20, where 
+“2. a:” and its continuation will be on a new line.  
+
+	System.out.println(a.two); //1
+System.out.println(Scope.three); //2
+System.out.println(a.FOUR); //3
+Scope.FOUR = 5; //4
+Scope.three = 3; //5
+Line 1 won’t compile and give out an error as field two is not visible.
+Line 2 won’t compile because it's using a static reference for a non-static field, in other words because the Scope class isn’t static it cannot be used in a static context without being initialized.
+Line 3 will print out 4.
+Line 4 won't compile because of the same reasons as line 2 and because FOUR is a final variable meaning it cannot be reassigned.
+Line 5 will compile however it breaks the concept of encapsulation
+
+The two compiler error messages were, duplicate local variable x, and w cannot be resolved to a variable. These errors occurred because two local variables cannot have the same name and w is an undefined local variable. 
+
+Two local variables can have the same name in different methods because the variable is defined within that method and assigned locally to that method so another variable with the same name will not affect either method. This can be seen in the constructor and in the method change. 
+
+Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration Syntax error, insert ";" to complete LocalVariableDeclarationStatement to cannot be resolved is the error printed after making changes to the constructor.
+
+The code output will be: 
+
+3. a: one = 3 two = 8 three = 20
+4. b: one = 3 two = 7 three = 8
+	The code output will be:
+		
+		5. a: one = 3 two = 15 three = 32
+6. b: one = 3 two = 15 three = 32
+
+x is 5  y is 5  z is 6
+x == y is true
+x == z is false
+
+r is Help   	s is Help   	t is HELP
+r == s is false
+r == t is false
+
+r.equals(s) is true
+
+System.out.println("r.equals(t) is " + r.equals(t));
+System.out.println("r.equals(t) is " + 
+r.equalsIgnoreCase(t));
+
+r.equals(t) is false
+r.equals(t) is true
