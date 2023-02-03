@@ -1,33 +1,47 @@
 package com.cs116.Lab3;
 
 import java.util.Arrays;
+import java.util.Random;
 
 public class SortSearch {
 
     public void selectionSortA(int[] arr) {
-        int temp;
-        int max;  
-
-        for(int i = 0; i < arr.length - 1; i++) {
-            max = indexOfLargestElement(arr);
-
-            temp = arr[max];
-            arr[max] = arr[arr.length - i - 1];
-            arr[arr.length - i - 1] = temp;
+        int min, temp;
+        for(int i = 0; i < arr.length; i++) {
+            min = i;
+            for(int j = i + 1; j < arr.length; j++) {
+                if(arr[j] < arr[min]) {
+                    min = j;
+                }
+            }
+            if(min != i) {
+                temp = arr[i];
+                arr[i] = arr[min];
+                arr[min] = temp;
+            }
         }
+
+        System.out.println(Arrays.toString(arr));
     }
 
     public void selectionSortD(int[] arr) {
-        int temp;
-        int max;  
+        int temp, max;  
 
-        for(int i = arr.length - 1; i <= 0; i++) {
-            max = indexOfLargestElement(arr);
-
-            temp = arr[max];
-            arr[max] = arr[arr.length - i - 1];
-            arr[arr.length - i - 1] = temp;
+        for(int i = 0; i < arr.length; i++) {
+            max = i;
+            for(int j = i + 1; j < arr.length; j++) {
+                if(arr[j] > arr[max]) {
+                    max = j;
+                }
+            }
+            if(max != i) {
+                temp = arr[i];
+                arr[i] = arr[max];
+                arr[max] = temp;
+            }
         }
+
+        System.out.println(Arrays.toString(arr));
     }
     
     public void insertionSortA(int[] arr) {
@@ -41,25 +55,27 @@ public class SortSearch {
                 arr[j] = arr[j - 1];
                 j--;
             }
-
             arr[j] = temp;
         }
+
+        System.out.println(Arrays.toString(arr));
     }
     
     public void insertionSortD(int[] arr) {
         int j, temp;
 
-        for(int i = arr.length-1; i <= 0; i--) {
+        for(int i = 1; i < arr.length; i++) {
             j = i;
             temp = arr[i];
 
-            while(j != 0 && arr[j - 1] > temp) {
+            while(j != 0 && arr[j - 1] < temp) {
                 arr[j] = arr[j - 1];
                 j--;
             }
-
             arr[j] = temp;
         }
+
+        System.out.println(Arrays.toString(arr));
     }
 
     public void bubbleSort(int[] arr) {
@@ -73,15 +89,39 @@ public class SortSearch {
                 }
             }
         }
+
+        System.out.println(Arrays.toString(arr));
     }
 
     public String[] sortArrayofStrings(String[] arr) {
-        
+        int j;
+        String temp;
+        for(int i = 1; i < arr.length; i++) {
+            j = i;
+            temp = arr[i];
+
+            while(j != 0 && temp.length() > arr[i].length()) {
+                arr[j] = arr[j-1];
+                j--;
+            }
+            arr[j] = temp;
+        }
         return arr;
     }
 
     public void shuffle(int[] arr) {
+        Random random = new Random();
 
+        int j, temp;
+
+        for(int i = arr.length - 1; i > 0; i--) {
+            j = random.nextInt(i + 1);
+            temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+
+        System.out.println(Arrays.toString(arr));
     }
 
     public int find(int[] arr, int x) {

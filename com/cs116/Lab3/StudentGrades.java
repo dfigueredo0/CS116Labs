@@ -21,38 +21,38 @@ public class StudentGrades {
     public void setStudents(int x) {
         if(x > 0) {
             students = x;
-            setGrades();
+            setRandomGrades();
         }
     }
 
-    private void setGrades() {
+    private void setRandomGrades() {
         grades = new int[students]; 
         for(int i = 0; i < grades.length; i++) {
             grades[i] = (int)(Math.random() * 100);
         }
     }
 
+    public void setGrades(int x) {
+        grades = new int[students]; 
+        for(int i = 0; i < grades.length; i++) {
+            grades[i] = x;
+        }
+    }
+
     public void sortHightoLow() {
         Arrays.sort(grades);
-        System.out.print("[ ");
-        for(int i = 0; i < grades.length - 1; i++) {
-            System.out.print(grades[i] + ", ");
-        }
-        System.out.println(grades[grades.length - 1] + " ]");
+        System.out.println(Arrays.toString(grades));
     }
 
     public void sortLowtoHigh() {
         Arrays.sort(grades);
+        int last = grades.length - 1;
         for(int i = 0; i < grades.length / 2; i++) {
             int temp = grades[i];
-            grades[i] = grades[(grades.length / 2) - i - 1];
-            grades[(grades.length / 2) - i - 1] = temp;
+            grades[i] = grades[last - i];
+            grades[last - i] = temp;
         }
-        System.out.print("[ ");
-        for(int i = 0; i < grades.length - 1; i++) {
-            System.out.print(grades[i] + ", ");
-        }
-        System.out.println(grades[grades.length-1] + " ]");
+        System.out.println(Arrays.toString(grades));
     }
 
     public int highestGrade() {
@@ -81,12 +81,32 @@ public class StudentGrades {
     }
 
     public int getGradeMode() {
-        int maxKey = 0;
-        int maxCounts = 0;
-        return 0;
+        int mode = grades[0];
+        int maxCount = 0;
+        for(int i = 0; i < grades.length; i++) {
+            int count = 1;
+            for(int j = 0; j < grades.length; j++) {
+                if(grades[j] == grades[i]) 
+                    count++;
+                if(count > maxCount) {
+                    mode = grades[i];
+                    maxCount = count;
+                }
+            }
+        }
+        return mode;
     }
 
     public boolean equals(StudentGrades other) {
+        if(other instanceof StudentGrades) {
+            if(other.students == students) {
+                for(int i = 0; i < grades.length; i++) {
+                    if(other.grades[i] == grades[i]) {
+                    return true;
+                    }
+                }
+            }
+        }
         return false;
     }
 

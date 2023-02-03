@@ -1,0 +1,16 @@
+{
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-javadoc.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-sources.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-tests.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-test-sources.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-javadoc.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-sources.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-tests.jar",
+        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-test-sources.jar"
+    ]
+}

@@ -16,7 +16,12 @@ public class StudentGradesTester {
 
         sGrades.setStudents(20);
         System.out.println(sGrades);
+        System.out.println(sGrades2);
 
-        System.out.println("Are the two clases equal " + sGrades.equals(sGrades2));
+        // in order to test equals method
+        sGrades.setGrades(100);
+        sGrades2.setGrades(100);
+
+        System.out.println("Are the two clases equal? " + sGrades.equals(sGrades2));
     }
 }
