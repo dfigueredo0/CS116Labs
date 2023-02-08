@@ -5,40 +5,38 @@ import java.util.Arrays;
 public class CountElements {
     
     public static void main(String[] args) {
-        int[] x = {1, 5, 0, 2, 3, 5, 1};
+        int[] x = {1, 2, 3, 5, 2, 1, 3, 1, 2, 44, 11, 5};
 
-        optimizedCountElements(x);
+        System.out.println(Arrays.toString(x));
+        System.out.println(countElement(x));
     }
 
-    public static String countElement(int[] arr, int x) {
-        int count = 0;
-        for(int i = 0; i < arr.length; i++) {
-            if(arr[i] == x) {
-                count++;
+    public static String countElement(int[] arr) {
+        int max = Integer.MIN_VALUE;
+        String str = "";
+        for (int i = 0; i < arr.length; i++) {
+            if (Math.abs(arr[i]) > max) {
+                max = Math.abs(arr[i]);
             }
         }
-        return x + " appears " + count + " times";
-    }
 
-    public static void optimizedCountElements(int[] arr) {
-        int values[][] = new int[2][arr.length + 2];
-        for(int i = 0; i < arr.length; i++)
-            values[0][i] = arr[i];
+        int[] frequency = new int[max + 1];
 
-        for(int i = 0; i < arr.length; i++)
-            for (int j = 0; j < arr.length; j++)
-                if (arr[i] == j)
-                    values[1][j]++;
-        
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
-
-        for (int i = 0; i < arr.length; i++)
-        {
-            if(values[1][i] == 1)
-                System.out.print(i + " was entered " + values[1][i] + " time\n");
-            else if(values[1][i] != 0)
-                System.out.print(i + " was entered " + values[1][i] + " times\n");
+        for(int i = 0; i <= max; i++) {
+            frequency[i] = 0;
         }
-    }
+
+        for (int i = 0; i < arr.length; i++) {
+            int index = Math.abs(arr[i]);
+            frequency[index]++;
+        }
+
+        for(int j = 0; j <= max; j++) {
+            if(frequency[j] > 0) {
+                str += (j + " occurs " + frequency[j] + " times\n");
+            }
+        }
+
+        return str;
+    }   
 }

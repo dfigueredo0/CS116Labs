@@ -1,16 +1,31 @@
 {
-    "java.dependency.packagePresentation": "hierarchical",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-javadoc.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-sources.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-tests.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-test-sources.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-javadoc.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-sources.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-tests.jar",
-        "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-test-sources.jar"
-    ]
+  "java.dependency.packagePresentation": "hierarchical",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-javadoc.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-sources.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-tests.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-text-1.10.0\\commons-text-1.10.0-test-sources.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-javadoc.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-sources.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-tests.jar",
+    "c:\\Users\\Dylan\\Downloads\\commons-lang3-3.12.0\\commons-lang3-3.12.0-test-sources.jar",
+    "c:\\Users\\Administrator\\Downloads\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0.jar",
+    "c:\\Users\\Administrator\\Downloads\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0-javadoc.jar",
+    "c:\\Users\\Administrator\\Downloads\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0-tests.jar",
+    "c:\\Users\\Administrator\\Downloads\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0-test-sources.jar",
+    "c:\\Users\\Administrator\\Downloads\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0-sources.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-lang3-3.12.0-20230208T031629Z-001\\commons-lang3-3.12.0\\commons-lang3-3.12.0.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-lang3-3.12.0-20230208T031629Z-001\\commons-lang3-3.12.0\\commons-lang3-3.12.0-javadoc.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-lang3-3.12.0-20230208T031629Z-001\\commons-lang3-3.12.0\\commons-lang3-3.12.0-sources.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-lang3-3.12.0-20230208T031629Z-001\\commons-lang3-3.12.0\\commons-lang3-3.12.0-tests.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-lang3-3.12.0-20230208T031629Z-001\\commons-lang3-3.12.0\\commons-lang3-3.12.0-test-sources.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0-javadoc.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0-tests.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0-test-sources.jar",
+    "c:\\Users\\Administrator\\Downloads\\CS116Labs\\commons-text-1.10.0-20230208T031625Z-001\\commons-text-1.10.0\\commons-text-1.10.0-sources.jar"
+  ]
 }
