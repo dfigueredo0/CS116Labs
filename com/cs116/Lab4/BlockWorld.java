@@ -1,10 +1,56 @@
 package com.cs116.Lab4;
 
 public class BlockWorld {
-    //TO-DO
-    //The blockworld is an n × n grid two-dimensional grid whose cells can either be colored black or white.
-    //Initially, when a block world is created all cells are black
-    //two constructors. One that takes parametern and a second one that takes no parameters and creates a grid with n=10
-    //The block world should provide methods for changing the color at a certain position and to get the color at a certain position which have the following signatures.
-    //Assume that the color of a cell is represented as a boolean value where true means white and false means black.
+    private String[][] grid;
+    
+    public BlockWorld() {
+        grid = new String[10][10];
+        for(int i = 0; i < grid.length; i++) {
+            for(int j = 0; j < grid[i].length; j++) {
+                grid[i][j] = "X";
+            }
+        }
+    }
+    
+    public BlockWorld(int size) {
+        grid = new String[size][size];
+        for(int i = 0; i < grid.length; i++) {
+            for(int j = 0; j < grid[i].length; j++) {
+                grid[i][j] = "X";
+            }
+        }
+    }
+
+    public boolean getCellColor(int x, int y) {
+        if(grid[x][y].equals("X"))
+            return false;
+        else
+            return true;
+    }
+
+    public void setCellColor(int x, int y, boolean setWhite) {
+        if(setWhite) {
+            grid[x][y] = " ";
+        } else {
+            grid[x][y] = "X";
+        }
+    }
+
+    public String toString() {
+        String str = "";
+        for(int i = 0; i < grid.length; i++) {
+            for(int j = 0; j < grid[i].length; j++) {
+                str += grid[i][j] + "\t";
+            }
+            str += "\n";
+        }
+        return str;
+    }
+
+    public static void main(String[] args) {
+        BlockWorld world = new BlockWorld(3);
+        world.setCellColor(0, 0, true);
+        world.setCellColor(2, 2, true);
+        System.out.println(world.toString());   
+    }
 }
