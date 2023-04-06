@@ -4,8 +4,6 @@ import java.util.Arrays;
 
 public class Problem2Client {
     public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		StudentGrades sg = new StudentGrades(10);
 		/* in case randomly generating 10 grades is not feasible ,
 		* you have the option to use a predefined array as input of grades ..
