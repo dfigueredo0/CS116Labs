@@ -1,0 +1,6 @@
+1. Home with 3 rooms, 2000.0 sq ft., with a basement
+2. Home with 2 rooms, 1500.0 sq ft., without a basement
+3. Home with 4 rooms, 3000.0 sq ft., with a basement
+4. Home with 3 rooms, 2500.0 sq ft., without a basement
+5. Home with 5 rooms, 4000.0 sq ft., with a basement
+Number of Homes: 5
