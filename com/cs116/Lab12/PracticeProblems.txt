@@ -1,0 +1,22 @@
+4.1. Identify the termination conditions (and resulting base case return values) in each of the above recursive methods.
+    The termination conditions in the recursive method, factorial is if n <= 1, for the recursive method, add, it is when i finally becomes zero.
+
+4.2. Identify the recursive calls in each of the above methods
+    return ( n * factorial (n -1));
+    return add (i -1 , j +1);
+
+4.3. Show all the recursive calls and final result in the execution of factorial(6).
+    int factorial(int n) {
+        if (n <= 1) // n = 6; n = 5; n = 4; n = 3; n = 2; n = 1
+            return 1; // 1
+        else
+            return (n * factorial(n - 1)); // 6 * factorial(5); 5 * factorial(4); 4 * factorial(3); 3 * factorial(2) * 2 * factorial(1)
+    }
+
+4.4. Show all the recursive calls and final result in the execution of add(5,9).
+    int add(int i , int j) { // assumes i >= 0
+        if (i == 0) // 5 != 0 -> add(4, 10) -> 4 != 0 -> add(3, 11) -> 3 != 0 -> add(2, 12) -> 2 != 0 -> add(1, 13) -> 1 != 0 -> add(0, 14) -> 0 == 0 -> 14
+            return j;
+        else
+            return add(i -1 , j + 1)
+    }

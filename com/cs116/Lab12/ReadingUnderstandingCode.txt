@@ -1,0 +1,9 @@
+1.1. What is the value of i after the following code is executed?
+    int i = foo(0);
+
+    The variable i is assigned the value of 0. 
+
+1.2. What is the value of i after the following code is executed?
+    int i = foo(4);
+
+    The variable i is assigned the value of 0. 
